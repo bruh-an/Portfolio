@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IAT 339 P03 Study Guide Elements</title>
+  <meta charset="utf-8">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header with Navigation Bar -->
+
+  <header>
+    <div id="navigation-wrapper">
+      <nav id="navigation">
+        <a href="index.html">HOME</a>
+        <a href="snapbudget.html">SnapBudget</a>
+        <a href="astrohno.html">AstrOh-No!</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. HTML Elements for a Style Guide -->
+
+  <main>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <h1>IAT 339 P03 Process Style Guide</h1>
+
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>Note: I do not use interactable text links for my portfolio, they are typically paired with buttons (as seen in astrohno.html)</h3>
+
+        <h3>CSS selector:</h3>
+        <p>a, link</p>
+
+        <h3>Sample code:</h3>
+        <code>
+            &lt;a class="link" href="https://canvas.sfu.ca/"&gt;A link to the Canvas site&lt;/a&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <a class="link" href="https://canvas.sfu.ca/">A link to the Canvas site</a>
+      </section>
+
+      <!-- Default Button styling section -->
+      <section>
+        <h2>A navigation link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>nav, navigation, a</p>
+
+        <h3>Sample code:</h3>
+        <code>
+            &lt;nav&gt;
+              &lt;div class="navigation"&gt;
+                &lt;a href="index.html"&gt;Default Navigation&lt;/a&gt;
+              &lt;div&gt;
+            &lt;/nav&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <nav>
+          <div class="navigation">
+            <a href="index.html">Default Navigation</a>
+          </div>
+        </nav>
+      </section>
+
+      <section>
+        <h2>Buttons</h2>
+
+        <h3>Note: The first button was not used</h3>
+        <h3>Note 2: The third button is interactable and is seen in my portfolio</h3>
+
+        <h3>CSS selector:</h3>
+        <p>.button, a</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;button class="button"&gt;Redirect&lt;/button&gt;
+          &lt;a class="button"&gt;Redirect&lt;/a&gt;
+          &lt;a class="button" href="https://canvas.sfu.ca/"&gt;To Canvas&lt;/a&gt;
+        </code>
+
+        <h3>Rendered elements:</h3>
+        <button class="button">Redirect</button>
+        <a class="button">Redirect</a>
+        <a class="button" href="https://canvas.sfu.ca/">To Canvas</a>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- Text styling SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+
+        <h3>Note: Heading styling (such as margins/spacing) vary depending on their parent container</h3>
+
+        <h3>CSS selector:</h3>
+        <p>h1, h2, h3, h4</p>
+
+        <h3>Sample code:</h3>
+        <code>
+              &lt;h1&gt;Heading 1&lt;/h1&gt;
+              &lt;h2&gt;Heading 2&lt;/h2&gt;
+              &lt;h3&gt;Heading 3&lt;/h3&gt;
+              &lt;h4&gt;Heading 4&lt;/h4&gt;
+            </code>
+
+        <h3>Rendered element:</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+
+        <h3>Note: Paragraph spacing and margins vary depending on their parent container</h3>
+
+        <h3>CSS selector:</h3>
+        <p>p</p>
+
+        <h3>Sample code:</h3>
+        <code>
+              &lt;p&gt;
+              This is a paragraph.
+              &lt;/p&gt;
+            </code>
+
+        <h3>Rendered element:</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
+          Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur
+          ante hendrerit. Donec et mollis dolor.</p>
+      </section>
+
+      <section>
+        <h2>Numbered Lists and Unordered Lists</h2>
+
+        <h3>Note: Numbered Lists are not used and unordered lists are only used for the citation page</h3>
+
+        <h3>CSS selector:</h3>
+        <p>ol, ul, li</p>
+
+        <h3>Sample code:</h3>
+        <code>
+              &lt;ol&gt;
+                &lt;li&gt;First item&lt;/li&gt;
+                &lt;li&gt;Second item&lt;/li&gt;
+                &lt;li&gt;Third item&lt;/li&gt;
+              &lt;/ol&gt;
+
+              &lt;ul&gt;
+                &lt;li&gt;Hello&lt;/li&gt;
+                &lt;li&gt;And&lt;/li&gt;
+                &lt;li&gt;Goodbye&lt;/li&gt;
+              &lt;/ul&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <ol>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ol>
+
+        <ul>
+          <li>Hello</li>
+          <li>And</li>
+          <li>Goodbye</li>
+        </ul>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+
+        <h3>Note: Navigation bar is visible at the top. The box background (navigation-wrapper) can not be displayed
+          here</h3>
+
+        <h3>CSS selector:</h3>
+        <p>a, nav, navigation, navigation-wrapper</p>
+
+        <h3>Sample code:</h3>
+        <code>
+              &lt;nav&gt;
+                &lt;div class="navigation"&gt;
+                  &lt;a href="#"&gt;HOME&lt;/a&gt;
+                  &lt;a href="#"&gt;SnapBudget&lt;/a&gt;
+                  &lt;a href="#"&gt;AstrOh-No!&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/nav&gt;
+            </code>
+
+        <h3>Rendered element:</h3>
+        <nav>
+          <div class="navigation">
+            <a href="index.html">HOME</a>
+            <a href="snapbudget.html">SnapBudget</a>
+            <a href="astrohno.html">AstrOh-No!</a>
+          </div>
+        </nav>
+      </section>
+
+      <section>
+        <h2>Banners</h2>
+
+        <h3>Note: Banners look much better on project pages themselves where they span the whole page width</h3>
+
+        <h3>CSS selector:</h3>
+        <p>.banner-area, .banner-area-2, .banner-area figure, .banner-area-2 figure, .center-h2-with-underline, a, img, figcaption</p>
+
+        <h3>Sample code:</h3>
+        <code>
+              &lt;div id="banner class="banner-area"&gt;
+                &lt;h2 class="center-h2-with-underline"&gt;Banner Heading&lt;/h2&gt;
+                  &lt;figure&gt;
+                    &lt;img src="#" alt"just an image that does not exist"&gt;
+                    &lt;figcaption&gt;here is a figcaption&lt;/figcaption&gt;
+                  &lt;/figure&gt;
+              &lt;/div&gt;
+            </code>
+
+        <h3>Rendered element:</h3>
+        <div id="banner" class="banner-area">
+          <h2 class="center-h2-with-underline">Banner Heading</h2>
+          <figure>
+            <img src="#" alt="just an image that does not exist">
+            <figcaption>here is a figcaption</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Project Cards</h2>
+
+        <h3>Note: These cards are seen on the home page</h3>
+
+        <h3>CSS selector:</h3>
+        <p>.project-card, .project-card:hover, .project-card:focus, .center-h2-with-underline, .project-card figcaption,
+          .project-card img</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="grid-area"&gt;
+
+            &lt;a href="index.html"&gt;&lt;/a&gt;
+                &lt;div id="sample-card1" class="project-card"&gt;
+                  &lt;h2 class="center-h2-with-underline"&gt;Sample Card&lt;/h2&gt;
+                    &lt;figure&gt;
+                      &lt;img src="#" alt="this image does not exist but will go to the home page when this card is pressed"&gt;
+                      &lt;figcaption&gt;This is a figure image sample&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+
+            &lt;a href="index.html"&gt;&lt;/a&gt;
+                &lt;div id="sample-card2" class="project-card"&gt;
+                  &lt;h2 class="center-h2-with-underline"&gt;Sample Card&lt;/h2&gt;
+                    &lt;figure&gt;
+                      &lt;img src="#" alt="this image does not exist but will go to the home page when this card is pressed"&gt;
+                      &lt;figcaption&gt;This is a figure image sample&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+
+          &lt;/div&gt;
+          </code>
+
+        <h3>Rendered element:</h3>
+        <div class="grid-area">
+
+          <a href="index.html">
+            <div id="sample-card1" class="project-card">
+              <h2 class="center-h2-with-underline">Sample Card</h2>
+              <figure>
+                <img src="#" alt="this image does not exist but will go to the home page when this card is pressed">
+                <figcaption>This is a figure image sample</figcaption>
+              </figure>
+            </div>
+          </a>
+
+          <a href="index.html">
+            <div id="sample-card2" class="project-card">
+              <h2 class="center-h2-with-underline">Sample Card</h2>
+              <figure>
+                <img src="#" alt="this image does not exist but will go to the home page when this card is pressed">
+                <figcaption>This is a figure image sample</figcaption>
+              </figure>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="other_elements">
+
+      <section>
+        <h2>Fonts</h2>
+
+        <h3>Note: Although h3 and navigation a use the same font, their text styling is different</h3>
+
+        <h3>CSS selector:</h3>
+        <p>h1, h2, h3, p, body, figcaption, .button, navigation a</p>
+
+        <h3>Sample code:</h3>
+        <code>
+            &lt;h2&gt;Afacad&lt;/h2&gt;
+
+            &lt;h3&gt;Asap&lt;h3&gt;
+
+            &lt;p&gt;Assistant&lt;/p&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+
+        <h2>h1, h2, button: Afacad</h2>
+        <h3>h3, navigation a: Assistant</h3>
+        <p>body, p, figcaption: Asap</p>
+      </section>
+
+      <section>
+        <h2>Colour Palettes</h2>
+
+        <h3>CSS selector:</h3>
+        <p>body, nav, footer</p>
+
+        <h3>Sample colors:</h3>
+        <code>
+          Common colors:
+            background-color: #171717; (for navigation-wrapper, footer, banner-area).
+            color: #00a6ff; (blue for several elements to provide colour contrast).
+            background-color: #015581; (border color for navigation-wrapper and footer).
+
+          Text (h1, h2, p, etc.) colors mostly use white (#FFFFFF) or anything close such as #F1F1F1 for body.
+          They may be swapped often for the color #00a6ff.
+        </code>
+
+      </section>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div id="footer-content" class="footer-content">
+      <h2> My Contact Info </h2>
+      <p> bna34@sfu.ca <em>|</em> 604-966-1691 </p>
+
+      <a href="style-guide.html">
+        <p class="link">View Style Guide</p>
+      </a>
+
+      <em>|</em>
+
+      <a href="citations.html">
+        <p class="link">View Citations</p>
+      </a>
+    </div>
+
+    <div id="footer-right-side" class="footer-content-right">
+      <p>Brian Nguyen <em>|</em> Portfolio</p>
+      <p>@2026</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SnapBudget</title>
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- Header with Navigation Bar -->
+
+        <header>
+            <div id="navigation-wrapper">
+                <nav id="navigation">
+                    <a href="index.html">HOME</a>
+                    <a href="snapbudget.html" class="active">SnapBudget</a>
+                    <a href="astrohno.html">AstrOh-No!</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Project Content -->
+
+        <div id="project-content">
+
+            <!-- Project Landing -->
+            <section id="project-landing">
+                <h1>SnapBudget: A Mobile Budgeting App (Process Analysis)</h1>
+                <img src="img/snapbudget.png" alt="SnapBudget landing image">
+            </section>
+
+            <!-- Project Introduction -->
+            <section id="project-introduction-section">
+                <h2 class="center-h2-with-underline">Project Contents</h2>
+
+                <div id="project-intro" class="grid-area">
+
+                    <!-- left -->
+                    <div id="project-intro-left">
+                        <div class="project-intro-element">
+                            <h3>PROJECT OBJECTIVE/PURPOSE</h3>
+                            <p>To create a user-friendly mobile app that helps individuals
+                                manage their budget and track their expenses effectively.</p>
+                        </div>
+
+                        <div class="project-intro-element">
+                            <h3>PROJECT MEMBER(S)</h3>
+                            <div class="project-intro-element-list grid-area">
+                                <p>Davis Chen</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- right -->
+                    <div id="project-intro-right">
+
+                        <div class="project-intro-element">
+                            <h3>TOOLS USED</h3>
+                            <div class="project-intro-element-list grid-area">
+                                <!-- ul does not properly display items in two columns so I just used p -->    
+                                <p>React Native</p>
+                                <p>Firebase</p>
+                                <p>Figma</p>
+                                <p>Canva</p>
+                                <p>Visual Studio Code</p>
+                                <p>OpenAI API</p>
+                                <p>Google APIs (Cloud Vision, Places)</p>
+                            </div>
+                        </div>
+
+                        <div class="project-intro-element">
+                            <h3>MY ROLE(S)</h3>
+                            <div class="project-intro-element-list grid-area">
+                                <p>Programming</p>
+                                <p>UI/UX Design</p>
+                                <p>Usability Testing</p>
+                                <p>UI Fixes</p>
+                                <p>Technical Documentation</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Project Overview and Ideation-->
+            <!-- left -->
+            <section id="project-overview" class="grid-area">
+
+                <div id="overview">
+                    <h1>SnapBudget Overview</h1>
+                    <p>
+                        <strong>SnapBudget</strong> is a mobile budgeting app I co-developed with a partner that helps
+                        users track expenses by <strong>taking photos or uploading images of receipts.</strong> The app
+                        uses Optical Character Recognition (OCR) to <strong>extract information such as the total cost,
+                        date, and vendor name, then organizes the expense into spending categories.</strong> Our
+                        goal was to create a simple budgeting tool for anybody who wishes to track spending without
+                        connecting their bank accounts.
+                    </p>
+                </div>
+
+                <!-- Ideation/Initial Concept -->
+                <!-- right -->
+                <div id="ideation">
+                    <h1>SnapBudget Initial Concept</h1>
+                    <p>
+                        In the early planning stage, we focused on building a <strong>lightweight alternative</strong>
+                        to traditional budgeting apps. The original concept included Firebase <strong>authentication,
+                        receipt scanning, local storage, cloud storage, and spending summaries.</strong> We also
+                        sketched out the main screens, including the login page, home dashboard, camera page, history
+                        page, and settings page.
+                    </p>
+                </div>
+
+            </section>
+
+            <div id="banner" class="banner-area">
+                <h2 class="center-h2-with-underline">Initial Design Sketches</h2>
+                <figure>
+                        <img src="img/sbsketches.png" alt="picture of SnapBudget's intital design sketches">
+                    <figcaption>These sketches were drawn using the website "Canva"</figcaption>
+                </figure>
+            </div>
+
+            <!-- Development, Refinement, and Challenges -->
+            <section id="project-conclusion" class="grid-area">
+
+                <div id="development">
+                    <h1>SnapBudget Development Process</h1>
+                    <p>
+                        After building the early prototype, we asked others to <strong>test the app for
+                        feedback</strong> on the main flow, focusing on elements such as UI/UX, scanning/uploading a
+                        receipt, and viewing saved receipts in the history page. Based on that feedback, we polished the
+                        interface by cleaning up the overall appearance, improving the camera screen layout, adjusting
+                        button placement, and making the image preview easier to understand. These changes helped make
+                        the app feel more usable and less like a rough technical demo.
+                    </p>
+                </div>
+
+                <div id="challenges">
+                    <h1>SnapBudget Challenges</h1>
+                    <p>
+                        The biggest challenge was <strong>getting OCR to work</strong> properly. Google Cloud Vision had
+                        trouble reading iPhone receipt images because some files were saved as HEIF, so we had to
+                        convert them to JPEG first. We also used regex patterns to pull useful receipt information and
+                        added an OpenAI API fallback in case the OCR failed.
+                    </p>
+                </div>
+
+                <!-- Ideation/Initial Concept -->
+                <!-- right -->
+                <div id="conclusion">
+                    <h1>SnapBudget Final Results</h1>
+                    <p>
+                        By the final version, SnapBudget included Firebase Authentication, functioning OCR, Google
+                        Places categorization, AsyncStorage caching, and a review modal where users could correct
+                        receipt details before saving. Overall, this collaborative project shows my ability to build
+                        functional app prototypes, work through technical problems, and <strong>improve an idea through
+                        iteration.</strong>
+                    </p>
+                </div>
+
+                <div id="showcase">
+                    <img src="img/sbshowcase.png"
+                        alt="image of processing a receipt using SnapBudget and viewing saved receipt history">
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer Content -->
+
+    <footer>
+
+        <div id="footer-content" class="footer-content">
+            <h2> My Contact Info </h2>
+            <p> bna34@sfu.ca <em>|</em> 604-966-1691 </p>
+
+            <a href="style-guide.html">
+                <p class="link">View Style Guide</p>
+            </a>
+
+            <em>|</em>
+
+            <a href="citations.html">
+                <p class="link">View Citations</p>
+            </a>
+        </div>
+
+        <div id="footer-right-side" class="footer-content-right">
+            <p>Brian Nguyen <em>|</em> Portfolio</p>
+            <p>@2026</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,610 @@
+/* Note: Responsiveness and large adaptations for smaller device sizes start adjusting at tablet sizes 
+(max-width: 768px), and page view should still be readable at even smaller sizes */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Afacad";
+    src: url('./Fonts/Afacad-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Asap";
+    src: url('./Fonts/Asap-VariableFont_wdth,wght.ttf');
+}
+
+@font-face {
+    font-family: "Assistant";
+    src: url('./fonts/Assistant-VariableFont_wght.ttf');
+}
+
+body {
+    /* background: #0e0d0d; */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/repeating-radial-gradient */
+    background: repeating-radial-gradient(farthest-corner at 50% 100%,
+            #122226,
+            #0d1212 2px,
+            #171717 10px,
+            #171717 20px);
+
+    margin: 0;
+    padding: 0;
+    color: #F1F1F1;
+    font-family: 'Asap', sans-serif;
+}
+
+section {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 5rem;
+}
+
+/* Move content down for space between nav bar */
+#project-content {
+    margin-top: 6.5rem;
+}
+
+footer {
+    background-color: #171717;
+    border-top: 1px solid #015581;
+    margin-top: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-content {
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.footer-content a {
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+/* For the list of items in the project introduction for each project page */
+.grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Screen responsiveness */
+@media (max-width: 768px) {
+    body {
+        background: repeating-radial-gradient(farthest-corner at 50% 100%,
+                #122226,
+                #0d1212 1px,
+                #171717 1px,
+                #171717 5px);
+    }
+
+    .footer-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .grid-area {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Default Elements */
+
+h1 {
+    font-family: 'Afacad', sans-serif;
+    position: relative;
+    font-size: 36px;
+    font-weight: 600;
+
+    letter-spacing: 0.07rem;
+
+    color: #F5F5F5;
+    margin-bottom: 2rem;
+    width: fit-content;
+}
+
+h2 {
+    font-family: 'Afacad', sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Custom header */
+.center-h2-with-underline {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline #00a6ff 2px;
+    text-underline-offset: 0.45rem;
+    padding-bottom: 0.6rem;
+}
+
+h3 {
+    font-family: 'Assistant', sans-serif;
+    color: #00a6ff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+
+    margin-bottom: 0.25rem;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Asap', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Bold */
+strong {
+    color: #ffffff;
+    font-weight: 850;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Asap', sans-serif;
+    color: #c3c3c3;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #b5b5b5;
+
+    transition: color 0.3s;
+}
+
+/* interactable text (such as links), they typically do not have underlines or stylings due to what I already have */
+a:hover,
+a:focus {
+    color: white;
+}
+
+/* For line separator "|" in footer */
+em {
+    color: #00a6ff;
+    font-weight: 550;
+    font-style: normal;
+}
+
+.button {
+    background-color: #282828;
+    border-radius: 0.5rem;
+    padding: 0.7rem 2rem;
+    margin-top: 0.5rem;
+
+    font-family: 'Afacad', sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    transition: background-color 0.3s;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #00a6ff;
+    cursor: pointer;
+}
+
+/* Some Default Element Responsiveness */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h3 {
+        font-size: 12px;
+        letter-spacing: 0.1rem;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    figcaption {
+        font-size: 11px;
+        letter-spacing: 0.07rem;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+/* Navigation Bar */
+
+/* Background Box Styling */
+#navigation-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #015581;
+    background-color: #171717;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+    z-index: 1;
+}
+
+#navigation {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 12%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    column-gap: 4rem; 
+    row-gap: 1.5rem; /* for even smaller screen widths */
+}
+
+#navigation a {
+    font-size: 16px;
+    font-family: 'Assistant', sans-serif;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+
+    transition: color 0.3s;
+}
+
+/* Navigation item/element changes when on their specific "active" page */
+#navigation a.active {
+    color: #00a6ff;
+    font-weight: 700;
+    text-decoration: underline #00a6ff 2px;
+    text-underline-offset: 0.45rem;
+}
+
+#navigation a:hover,
+#navigation a:focus {
+    color: #00a6ff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #navigation a {
+        font-size: 12px;
+    }
+}
+
+/* Footer Extra */
+
+.footer {
+    position: relative;
+}
+
+.footer-content h2 {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-bottom: 0.1rem;
+}
+
+.footer-content p {
+    margin-top: 0.5rem;
+}
+
+/* For text stuff at the bottom right of the footer */
+.footer-content-right {
+    text-align: right;
+    margin-right: 12%;
+    line-height: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    #footer-content h2 {
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* Main Page */
+
+.biography {
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+#selfie {
+    width: 50%;
+    margin: auto;
+}
+
+#selfie img {
+    border: groove 4px #00a6ff;
+}
+
+/* spacing between paragraphs/sentences (for biography) */
+.paragraph-spacing {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    background-color: #141717;
+
+    border-radius: 0.5rem;
+    border: solid;
+    border-width: 1px;
+    border-color: #2c2c2c;
+    height: 100%;
+
+    transition: box-shadow 0.3s, transform 0.5s;
+}
+
+/* Adds a border effect */
+.project-card:hover,
+.project-card:focus {
+    box-shadow: 0 0 0 1px #00a6ff;
+    transform: scale(1.03);
+}
+
+.project-card figcaption {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Ensure alt text of images is visible (for accessibility)*/
+.project-card img {
+    color: #ffffff;
+}
+
+/* Keeps the main selfie image bigger to a certain extent */
+@media (max-width: 1200px) {
+    #selfie {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        border-radius: 0.25rem;
+    }
+
+    .project-card figcaption {
+        margin-top: 0.75rem;
+    }
+}
+
+/* For Project Pages */
+
+#project-landing {
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 2rem;
+}
+
+#project-landing img {
+    border: groove 8px #00a6ff;
+}
+
+/* p text for project pages (spacing) */
+#project-intro p,
+#project-overview p,
+#project-conclusion p {
+    letter-spacing: 0.1rem;
+    line-height: 1.4rem;
+}
+
+/* Project Introduction Section */
+.project-intro-element {
+    margin-top: 2rem;
+}
+
+.project-intro-element-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+#showcase img {
+    border: groove 4px #00a6ff;
+}
+
+#game-redirect p {
+    margin-bottom: 1.5rem;
+    color: #00a6ff;
+    font-weight: 450;
+    letter-spacing: 0.1rem;
+}
+
+/* banner-area for SnapBudget, banner-area-2 for astrohno */
+/* The banners are slightly different on each site */
+.banner-area,
+.banner-area-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 1.25rem;
+
+    background-color: #171717;
+    border-radius: 0.5rem;
+    border: solid;
+    border-width: 1px;
+    color: #2c2c2c;
+
+    max-width: 100%;
+}
+
+/* For spacing between center-h2-with-underline and img in the banner-area */
+.banner-area h2,
+.banner-area-2 h2 {
+    margin-bottom: 0;
+}
+
+.banner-area p {
+    text-align: center;
+}
+
+.banner-area img {
+    max-width: 30rem;
+}
+
+/* For banner area for AstrOh-No! page because the image is different sized, banner-area-2 exists */
+/* Better visibility when this image is larger */
+.banner-area-2 img {
+    max-width: 40rem;
+}
+
+.banner-area-2 p {
+    text-align: center;
+    /* For alt text to be more readable when image is missing */
+    color: #00a6ff;
+    line-height: 2rem;
+}
+
+.banner-area figure,
+.banner-area-2 figure {
+    /* For alt text to be more readable when image is missing */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.banner-area img,
+.banner-area-2 img {
+    border: groove 4px #00a6ff;
+}
+
+.banner-area figcaption,
+.banner-area-2 figcaption {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+@media (max-width: 768px) {
+    #project-landing {
+        margin-bottom: 0rem;
+    }
+
+    #project-landing img {
+        border: groove 4px #00a6ff;
+    }
+
+    #project-intro p,
+    #project-overview p,
+    #project-conclusion p {
+        line-height: 1.2rem;
+    }
+
+    #game-redirect p {
+        margin-bottom: 0.85rem;
+    }
+
+    .banner-area {
+        padding-top: 0.75rem;
+        padding-bottom: 1rem;
+    }
+
+    .banner-area-2 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.85rem;
+    }
+
+    .banner-area img {
+        max-width: 70%;
+    }
+
+    .banner-area-2 img {
+        max-width: 75%;
+    }
+
+    .banner-area h2,
+    .banner-area-2 h2 {
+        margin-top: 0;
+    }
+
+    .banner-area figure {
+        margin-bottom: 0;
+    }
+
+    /* separate spacing because astrohno page's banner-area has more elements (p and button) */
+    .banner-area-2 figure {
+        margin-bottom: 0.4rem;
+    }
+
+    .banner-area figcaption,
+    .banner-area-2 figcaption {
+        margin-top: 0.75rem;
+    }
+
+    /* keeps button closer to descriptor text */
+    .banner-area-2 .button {
+        margin-top: 0.2rem;
+    }
+}
+
+/* Citations Page */
+
+#citation-list {
+    margin-top: 6rem;
+    margin-left: 12%;
+    margin-right: 12%;
+    line-height: 2rem;
+}
+
+#citation-list a {
+    text-decoration: underline;
+    color: #00a6ff
+}
+
+#citation-list a:hover,
+#citation-list a:focus {
+    color: #ffffff
+}
+
+#citation-list h2 {
+    margin-top: 1rem;
+}
+
+/* For style guide (spacing to show h1 at the top of the page) */
+
+#interactive_elements {
+    margin-top: 6rem;
+}
