@@ -277,6 +277,16 @@
                 &lt;/div&gt;
             &lt;/a&gt;
 
+            &lt;a href="index.html"&gt;&lt;/a&gt;
+                &lt;div id="sample-card3" class="project-card"&gt;
+                  &lt;h2 class="center-h2-with-underline"&gt;Sample Card&lt;/h2&gt;
+                    &lt;figure&gt;
+                      &lt;img src="img/astroaward.jpg" alt="an image that can be found on the astrohno page"&gt;
+                      &lt;figcaption&gt;This is a figure image sample&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+
           &lt;/div&gt;
           </code>
 
@@ -288,7 +298,7 @@
               <h2 class="center-h2-with-underline">Sample Card</h2>
               <figure>
                 <img src="#" alt="this image does not exist but will go to the home page when this card is pressed">
-                <figcaption>This is a figure image sample</figcaption>
+                <figcaption>This sample card has an image</figcaption>
               </figure>
             </div>
           </a>
@@ -303,6 +313,16 @@
             </div>
           </a>
 
+          <a href="astrohno.html">
+            <div id="sample-card3" class="project-card">
+              <h2 class="center-h2-with-underline">Sample Card</h2>
+              <figure>
+                <img src="img/astroaward.jpg" alt="an image that can be found on the astrohno page">
+                <figcaption>This sample card has an image</figcaption>
+              </figure>
+            </div>
+          </a>
+
         </div>
       </section>
 
@@ -311,6 +331,33 @@
     <!-- // COMBINED ELEMENTS SECTION -->
 
     <section id="other_elements">
+
+      <section>
+        <h2>Images</h2>
+
+        <h3>Note: Many images appear different depending on how they are styled for the specific page or is in a combined element</h3>
+        <h3>Note 2: #showcase selector applies "border: groove 4px #00a6ff;" to the image </h3>
+
+        <h3>CSS selector:</h3>
+        <p>img, #showcase img</p>
+
+        <h3>Sample code:</h3>
+        <code>
+            &lt;div id="showcase"&gt;
+              &lt;img src="img/sbshowcase.png"
+                  alt="image of processing a receipt using SnapBudget and viewing saved receipt history">&gt;
+            &lt;/div&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+
+        <div id="showcase">
+          <img src="img/sbshowcase.png"
+              alt="image of processing a receipt using SnapBudget and viewing saved receipt history">
+        </div>
+
+      </section>
+
 
       <section>
         <h2>Fonts</h2>
@@ -339,6 +386,8 @@
       <section>
         <h2>Colour Palettes</h2>
 
+        <h3>Note: There were many other arbitrary colours I have used ranging between black and white, such as a very dark gray for the background radial effect</h3>
+
         <h3>CSS selector:</h3>
         <p>body, nav, footer</p>
 
@@ -352,6 +401,8 @@
           Text (h1, h2, p, etc.) colors mostly use white (#FFFFFF) or anything close such as #F1F1F1 for body.
           They may be swapped often for the color #00a6ff.
         </code>
+          <img src="img/colorpalette.png"
+              alt="image of my portfolio's color palette">
 
       </section>
     </section>

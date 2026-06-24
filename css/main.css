@@ -103,7 +103,7 @@ h1 {
 
     letter-spacing: 0.07rem;
 
-    color: #F5F5F5;
+    color: #ffffff;
     margin-bottom: 2rem;
     width: fit-content;
 }
@@ -117,10 +117,12 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Custom header */
+/* Custom h2 header styling */
 .center-h2-with-underline {
     position: relative;
     align-items: center;
+    margin-bottom: 0;
+
     text-align: center;
     text-decoration: underline #00a6ff 2px;
     text-underline-offset: 0.45rem;
@@ -398,6 +400,7 @@ em {
 
 @media (max-width: 768px) {
     .project-card {
+        margin-top: 0.25rem;
         border-radius: 0.25rem;
     }
 
@@ -459,6 +462,7 @@ em {
     padding-right: 0;
     padding-top: 0.75rem;
     padding-bottom: 1.25rem;
+    margin-bottom: 3rem;
 
     background-color: #171717;
     border-radius: 0.5rem;
@@ -467,12 +471,6 @@ em {
     color: #2c2c2c;
 
     max-width: 100%;
-}
-
-/* For spacing between center-h2-with-underline and img in the banner-area */
-.banner-area h2,
-.banner-area-2 h2 {
-    margin-bottom: 0;
 }
 
 .banner-area p {
@@ -515,12 +513,12 @@ em {
 .banner-area-2 figcaption {
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
     #project-landing {
-        margin-bottom: 0rem;
+        margin-bottom: 0;
     }
 
     #project-landing img {
